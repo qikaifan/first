@@ -1,10 +1,12 @@
 # Just a test python pro.
 
 ## begin
+````
 cd 当前工程目录
+```
 
 ### 虚拟环境
-````
+```
 virtualenv .venv           # 安装名为.venv的虚拟环境
 source .venv/bin/activate  # 进入虚拟环境
 ```
@@ -24,5 +26,5 @@ gunicorn --paste=etc/development/app.conf
 
 ### 访问
 ```
-127.0.0.1:8000
+127.0.0.1:8000/<youwantinput>
 ```

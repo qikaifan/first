@@ -29,7 +29,7 @@ class User(UserMixin):
 
     @staticmethod
     def verity_token(token):
-        conn = httplib.HTTPConnection('qsso.corp.qunar.com')
+        conn = httplib.HTTPConnection('qsso')
         conn.request('GET', '/api/verifytoken.php?token=%s' % token)
         resp = conn.getresponse().read()
         conn.close()
